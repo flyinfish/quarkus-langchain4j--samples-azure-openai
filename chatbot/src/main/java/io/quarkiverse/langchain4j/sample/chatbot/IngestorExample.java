@@ -15,6 +15,7 @@ import dev.langchain4j.data.document.parser.TextDocumentParser;
 import dev.langchain4j.model.embedding.EmbeddingModel;
 import dev.langchain4j.store.embedding.EmbeddingStore;
 import dev.langchain4j.store.embedding.EmbeddingStoreIngestor;
+import io.quarkiverse.langchain4j.ModelName;
 import io.quarkus.logging.Log;
 import io.quarkus.runtime.StartupEvent;
 
@@ -33,6 +34,7 @@ public class IngestorExample {
      * The bean is provided by the LLM (like openai) extension.
      */
     @Inject
+    // does not make a difference when using @ModelName("namedembedding")
     EmbeddingModel embeddingModel;
 
     public void ingest(@Observes StartupEvent event) {

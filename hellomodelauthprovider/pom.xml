@@ -3,8 +3,8 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>io.quarkiverse.langchain4j</groupId>
-    <artifactId>quarkus-langchain4j-sample-azureopenai-chatbot</artifactId>
-    <name>Quarkus LangChain4j - Sample - Azure OpenAI - Chatbot</name>
+    <artifactId>quarkus-langchain4j-sample-azureopenai-helloai-modelauthprovider</artifactId>
+    <name>Quarkus LangChain4j - Sample - Azure OpenAI- Hello Chat using ModelAuthProvider</name>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
@@ -40,7 +40,7 @@
         </dependency>
         <dependency>
             <groupId>io.quarkus</groupId>
-            <artifactId>quarkus-websockets-next</artifactId>
+            <artifactId>quarkus-smallrye-openapi</artifactId>
         </dependency>
         <dependency>
             <groupId>io.quarkiverse.langchain4j</groupId>
@@ -48,29 +48,11 @@
             <version>${quarkus-langchain4j.version}</version>
         </dependency>
         <dependency>
-            <groupId>io.quarkiverse.langchain4j</groupId>
-            <artifactId>quarkus-langchain4j-redis</artifactId>
-            <version>${quarkus-langchain4j.version}</version>
+            <groupId>com.azure</groupId>
+            <artifactId>azure-identity</artifactId>
+            <version>1.14.2</version>
         </dependency>
 
-        <!-- UI -->
-        <dependency>
-            <groupId>io.mvnpm</groupId>
-            <artifactId>importmap</artifactId>
-            <version>1.0.11</version>
-        </dependency>
-        <dependency>
-            <groupId>org.mvnpm</groupId>
-            <artifactId>lit</artifactId>
-            <version>3.2.0</version>
-            <scope>runtime</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.mvnpm</groupId>
-            <artifactId>wc-chatbot</artifactId>
-            <version>0.2.0</version>
-            <scope>runtime</scope>
-        </dependency>
 
         <!-- Minimal dependencies to constrain the build -->
         <dependency>

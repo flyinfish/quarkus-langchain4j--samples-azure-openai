@@ -19,7 +19,7 @@ public class AzureOpenAiTokenProvider implements ModelAuthProvider {
 
   @PostConstruct
   void buildTokenCache() {
-    // use default credential chain trying wathever available, falling locally back to AzureCliCredential
+    // use default credential chain trying whathever available, hopefully grab a token at last with AzureCliCredential
     var credentialChain = new DefaultAzureCredentialBuilder().build();
     tokenCache = new AccessTokenCache(credentialChain);
   }

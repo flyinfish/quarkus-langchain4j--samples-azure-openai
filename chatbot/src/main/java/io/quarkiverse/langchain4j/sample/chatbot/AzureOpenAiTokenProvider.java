@@ -9,7 +9,11 @@ import io.quarkiverse.langchain4j.auth.ModelAuthProvider;
 import jakarta.annotation.PostConstruct;
 import jakarta.enterprise.context.ApplicationScoped;
 
-@ApplicationScoped
+/**
+ * this uses authentication with token from Azure
+ * you can alternatively delete this and use api-keys as shown in .env-template
+ */
+@ApplicationScoped 
 public class AzureOpenAiTokenProvider implements ModelAuthProvider {
   private static final String SCOPE = "https://cognitiveservices.azure.com/.default";
   private static final TokenRequestContext TOKEN_REQUEST_CONTEXT =

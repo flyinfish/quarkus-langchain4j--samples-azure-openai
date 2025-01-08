@@ -12,5 +12,5 @@ Then, simply run the project in Dev mode:
 mvn quarkus:dev
 ```
 
-invoke rest with `curl localhost:8080/hello` or with swagger-ui
+invoke rest with `curl localhost:8080/hello` or with swagger-ui.
 

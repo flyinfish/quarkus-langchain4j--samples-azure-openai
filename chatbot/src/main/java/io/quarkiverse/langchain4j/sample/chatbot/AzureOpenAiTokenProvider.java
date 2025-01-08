@@ -1,4 +1,4 @@
-package io.quarkiverse.langchain4j.sample.hello;
+package io.quarkiverse.langchain4j.sample.chatbot;
 
 import static java.lang.String.format;
 

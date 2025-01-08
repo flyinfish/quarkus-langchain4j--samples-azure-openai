@@ -52,7 +52,12 @@
             <artifactId>quarkus-langchain4j-redis</artifactId>
             <version>${quarkus-langchain4j.version}</version>
         </dependency>
-
+        <dependency>
+            <groupId>com.azure</groupId>
+            <artifactId>azure-identity</artifactId>
+            <version>1.14.2</version>
+        </dependency>
+        
         <!-- UI -->
         <dependency>
             <groupId>io.mvnpm</groupId>

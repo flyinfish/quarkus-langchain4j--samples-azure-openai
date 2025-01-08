@@ -34,7 +34,6 @@ public class IngestorExample {
      * The bean is provided by the LLM (like openai) extension.
      */
     @Inject
-    //when uncommenting this it works - thankfully it is possible to specify api-key for @ModelName("namedembedding")
     EmbeddingModel embeddingModel;
 
     public void ingest(@Observes StartupEvent event) {

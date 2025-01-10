@@ -6,6 +6,7 @@ import com.azure.core.credential.TokenRequestContext;
 import com.azure.core.implementation.AccessTokenCache;
 import com.azure.identity.DefaultAzureCredentialBuilder;
 import io.quarkiverse.langchain4j.auth.ModelAuthProvider;
+import io.smallrye.common.annotation.Blocking;
 import jakarta.annotation.PostConstruct;
 import jakarta.enterprise.context.ApplicationScoped;
 

@@ -22,7 +22,6 @@ public class HelloResource {
   @GET
   @Path("/stream")
   @Produces(MediaType.SERVER_SENT_EVENTS)
-  //@Blocking
   public Multi<String> helloStream(@QueryParam("message") Optional<String> message) {
     return helloAI.chatStream(message.orElse("Hi"));
   }
